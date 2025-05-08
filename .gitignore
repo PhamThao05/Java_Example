@@ -1,0 +1,40 @@
+# Eclipse workspace files
+.metadata/
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+.settings/
+.classpath
+.project
+
+# Build output
+bin/
+build/
+target/
+out/
+
+# IDE-specific
+Servers/
+.vscode/
+.idea/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+
+# Java compiled files
+*.class
+
+# Eclipse refactor history
+**/.refactorings/
+
+# Eclipse WebView cache
+**/EBWebView/
