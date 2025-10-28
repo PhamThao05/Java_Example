@@ -3,25 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <title>Đăng ký người dùng</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            width: 350px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 6px 0 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        div[th\\:if] p {
+            text-align: center;
+            font-weight: bold;
+            color: green;
+        }
+    </style>
 </head>
 <body>
-<h2>Đăng ký tài khoản</h2>
+    <form th:action="@{/register}" th:object="${user}" method="post">
+        <h2>Đăng ký tài khoản</h2>
 
-<form th:action="@{/register}" th:object="${user}" method="post">
-    <label>Tên đăng nhập:</label><br>
-    <input type="text" th:field="*{username}" /><br>
+        <label>Tên đăng nhập:</label><br>
+        <input type="text" th:field="*{username}" /><br>
 
-    <label>Mật khẩu:</label><br>
-    <input type="password" th:field="*{password}" /><br>
+        <label>Mật khẩu:</label><br>
+        <input type="password" th:field="*{password}" /><br>
 
-    <label>Email:</label><br>
-    <input type="email" th:field="*{email}" /><br>
+        <label>Email:</label><br>
+        <input type="email" th:field="*{email}" /><br>
 
-    <button type="submit">Đăng ký</button>
-</form>
+        <button type="submit">Đăng ký</button>
 
-<div th:if="${successMessage}">
-    <p th:text="${successMessage}" style="color:green;"></p>
-</div>
+        <div th:if="${successMessage}">
+            <p th:text="${successMessage}"></p>
+        </div>
+    </form>
 </body>
 </html>

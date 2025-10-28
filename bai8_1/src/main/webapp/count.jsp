@@ -2,8 +2,7 @@
 
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Đếm ký tự</title>
+    <meta charset="UTF-8"><title>Đếm ký tự</title>
 </head>
 <body>
     <h2>Nhập chuỗi để đếm ký tự:</h2>

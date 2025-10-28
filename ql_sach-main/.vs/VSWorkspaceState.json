@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\build",
+    "\\dist",
+    "\\nbproject",
+    "\\src",
+    "\\src\\BUS",
+    "\\src\\DAL",
+    "\\src\\database",
+    "\\src\\DTO",
+    "\\src\\GUI"
+  ],
+  "SelectedNode": "\\src\\GUI\\fDangNhap.form",
+  "PreviewInSolutionExplorer": false
+}
